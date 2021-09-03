@@ -1,0 +1,124 @@
+/* My little reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    background-color: unset;
+    border: unset;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Colors */
+:root {
+    --body-font: #FFFFFF;
+    --body-background: #684BB1;
+    --button-font: #684BB1;
+    --button-background: #FFFFFF;
+    --button-active-background: #E880E8;
+    --button-active-font: #FFFFFF;
+    --button-shadow: 1px 3px 5px #00000045;
+    --social-media-border: 1px solid #FFFFFF;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: var(--body-font);
+    background-color: var(--body-background);
+    background-image: url(../images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding: 40px;
+}
+
+.header {
+    margin-bottom: 70px;
+}
+
+.header__logo {
+    width: 120px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.main-mockup {
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+
+.text {
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.button {
+    color: var(--button-font);
+    font-size: 12px;
+    background-color: var(--button-background);
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 64px;
+    box-shadow: var(--button-shadow);
+}
+
+.button:active {
+    background-color: var(--button-active-background);
+    color: var(--button-active-font);
+}
+
+.social-media {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 8px;
+}
+
+.social-media__media {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: var(--social-media-border);
+    border-radius: 50%;
+    background-size: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.social-media__media--facebook {
+    background-image: url(../images/facebook.svg);
+}
+
+.social-media__media--twitter {
+    background-image: url(../images/twitter.svg);
+}
+
+.social-media__media--instagram {
+    background-image: url(../images/instagram.svg);
+}
